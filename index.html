@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/vendor/slick/slick.css">
+    <link rel="stylesheet" href="./src/vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="./src/css/magnific-popup.css">
+    <link rel="stylesheet" href="./src/css/modal.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/adaptive.css">
+    <title>База отдыха</title>
+</head>
+
+<body>
+    <header class="header__navbar">
+        <div class="container">
+            <div class="header__navbar__wrapper">
+                <a class="navbar__logo" href="#"><img class="navbar__logo-img" src="./src/img/logo.png" alt="logo"></a>
+                <nav class="nav__wrapper">
+                    <ul class="header__menu">
+                        <li><a data-goto="" class="header__menu__items" href="#">Главная</a></li>
+                        <li><a data-goto=".about__us" class="header__menu__items" href="#">Лечение</a></li>
+                        <li><a data-goto=".block__services" class="header__menu__items" href="#">О нас</a></li>
+                        <li><a data-goto=".contact__link-box" class="header__menu__items" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="nav__mobile__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button class="header-btn">Забронировать номер</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="about" class="main">
+        <section class="welcome">
+            <div class="container">
+                <div class="welcome__content">
+                    <h1 class="welcome__title">
+                        Добро пожаловать в Санаторий “Шипа су”!
+                    </h1>
+                    <form class="welcome__form">
+                        <input class="form__input icon-man" type="text" placeholder="Ваше Имя">
+                        <input class="form__input icon-phone" type="tel" placeholder="Номер телефона">
+                        <input class="form__input icon-note" type="text" placeholder="Примечания">
+                        <button class="form__btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="about__us">
+                <p class="about__us-title">Немного про нас</p>
+                <h2 class="global__title">
+                    Отдых и оздоровление в лечебных водах
+                </h2>
+                <div class="about__us__wrapper-content">
+                    <div class="about__us__wrapper__content__text">
+                        <p class="global__content__text">Санаторий “Шипа су” - это райский уголок среди
+                            пустынной местности Туркестана. Местные нередко называют эту территорию Оазисом и мечтают
+                            искупаться в роскошном бассейне. Что уж говорить о местной минеральной воде, которая
+                            излечила
+                            уже не одну тысячу довольных постояльцев.
+                        </p>
+                        <p class="global__content__text">
+                            Благодаря наличию уникальных природных лечебных факторов и развитой инфраструктуре,
+                            квалифицированный персонал санатория всегда найдет для Вас оптимальное сочетание
+                            эффективного
+                            лечения и приятного отдыха.
+
+                        </p>
+                        <p class="global__content__text">Здоровое сбалансированное питание, комфортные условия
+                            проживания, широкий спектр СПА-услуг и сервиса позволят получить неисчерпаемый заряд
+                            бодрости,
+                            восстановят силы и продлят молодость.
+                        </p>
+                    </div>
+                    <img class="about__us__wrapper__content__img" src="./src/img/media-img/about-relax.jpg"
+                        alt="Фото релакс">
+                </div>
+            </section>
+
+            <section class="block__services">
+                <h2 class="global__title">
+                    Что мы предлагаем
+                </h2>
+                <div class="services__wrapper">
+                    <div class="services__box">
+                        <img class="services__img" src="./src/img/services-img/services__img-1.jpg" alt="Наши услуги">
+                        <div class="services__title">Комфортные номера</div>
+                        <div class="services__text__wrapper">
+                            <p class="services__text">Ваш комфорт - наши заботы</p>
+                            <p class="services__text">Свежий ремонт</p>
+                            <p class="services__text">Услужливый персонал</p>
+                        </div>
+                    </div>
+                    <div class="services__box">
+                        <img class="services__img" src="./src/img/services-img/services__img-2.jpg" alt="Наши услуги">
+                        <div class="services__title">Оздоровительные процедуры</div>
+                        <div class="services__text__wrapper">
+                            <p class="services__text"> Циркулярный душ</p>
+                            <p class="services__text">Свежая питьевая вода</p>
+                            <p class="services__text">Здоровье для всей семьи</p>
+                        </div>
+                    </div>
+                    <div class="services__box">
+                        <img class="services__img" src="./src/img/services-img/services__img-3.jpg" alt="Наши услуги">
+                        <div class="services__title">национальная кухня</div>
+                        <div class="services__text__wrapper">
+                            <p class="services__text">Вкусно</p>
+                            <p class="services__text">Полезно</p>
+                            <p class="services__text">Уникально</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="treatment" class="treatment__services">
+                <img class="treatment__services-img" src="./src/img/services-img/treatment__services-img.png"
+                    alt="Фото лечения">
+                <div class="treatment__services__content">
+                    <h3 class="treatment__services__content-title">Услуги лечения и косметологии</h3>
+                    <div class="treatment__services__content__text__wrapper">
+                        <p class="global__content__text">Среди множества высокоэффективных курсов лечения
+                            встречаются такие
+                            услуги, как грязевые ванны, физиотерапия, профилактика и лечение кожных заболеваний,
+                            гайморитов
+                            и заболеваний печени. А благодаря нашим специалистам в сфере косметологии ваша кожа станет
+                            нежнее, чем кожа младенца
+                        </p>
+                        <p class="global__content__text">Здесь круглогодично ведется работа, чтобы каждый
+                            отдыхающий был
+                            окружен вниманием и находился в благоприятной обстановке.
+                        </p>
+                        <p class="global__content__text">Для отдыхающих и пациентов санатория мы создали и
+                            регулярно
+                            поддерживаем условия, при которых каждый чувствует себя в дружественной и спокойной
+                            обстановке.
+                        </p>
+                        <button class="global-btn treatment__learnmore-btn">Подробнее</button>
+                        <div class="bg-yellow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="games" class="entertainment__services">
+                <h2 class="global__title entertainment__services-title">Развлечения и достопримечательности</h2>
+                <div class="entertainment__services__wrapper">
+                    <div class="entertainment__services__content">
+                        <img src="./src/img/media-img/entertainment-img.jpg" alt="Фото развлечения">
+                        <div class="entertainment__services__wrapper-text">
+                            <p class="global__content__text">Вы можете воспользоваться экскурсионными услугами. Посетите
+                                ставшие
+                                уже историческими места – Каратауский заповедник, Отрарский оазис, Мавзолей Ходжи Ахмеда
+                                Ясави.
+                            </p>
+                            <p class="global__content__text">Сочетание активного отдыха и релакса поможет восстановить
+                                силы.
+                                Новая трудовая неделя начнется «с чистого листа».</p>
+                            <button class="global-btn treatment__learnmore-btn">Подробнее</button>
+                        </div>
+                    </div>
+                    <img class="entertainment__services__right-photo"
+                        src="./src/img/media-img/entertainment_right-photo.jpg" alt="Фото развлечения">
+                </div>
+            </section>
+
+            <section class="rooms__service">
+                <h2 class="global__title">Номера</h2>
+                <div class="rooms__service__wrapper">
+                    <div class="rooms__box">
+                        <img class="rooms-img" src="./src/img/rooms-img/rooms-img-1.jpg" alt="Спальные номера">
+                        <div class="rooms__service__wrapper-content">
+                            <p class="rooms__box-title">Стандарт</p>
+                            <p class="services__text services__price ">От <span class="services__price-span"> 300</span>
+                                долл/сутки.</p>
+                            <p class="services__text">Квадратура номера 20 кв.м.</p>
+                            <p class="services__text"> Балкон 3 кв.м</p>
+                            <p class="services__text">Душ и все принадлежности <br>
+                                на 2 двоих отдельные раздельные кровати </p>
+                            <button
+                                class="global-btn treatment__learnmore-btn treatment__services-btn">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="rooms__box">
+                        <img class="rooms-img" src="./src/img/rooms-img/rooms-img-2.jpg" alt="Спальные номера">
+                        <div class="rooms__service__wrapper-content">
+                            <p class="rooms__box-title">Де люкс</p>
+                            <p class="services__text services__price ">От <span class="services__price-span"> 450</span>
+                                долл/сутки.</p>
+                            <p class="services__text">Квадратура номера 20 кв.м.</p>
+                            <p class="services__text"> Балкон 3 кв.м</p>
+                            <p class="services__text">Душ и все принадлежности <br>
+                                на 2 двоих отдельные раздельные кровати </p>
+                            <button
+                                class="global-btn treatment__learnmore-btn treatment__services-btn">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="rooms__box">
+                        <img class="rooms-img" src="./src/img/rooms-img/rooms-img-3.jpg" alt="Спальные номера">
+                        <div class="rooms__service__wrapper-content">
+                            <p class="rooms__box-title">Люкс</p>
+                            <p class="services__text services__price ">От <span class="services__price-span"> 600</span>
+                                долл/сутки.</p>
+                            <p class="services__text">Квадратура номера 20 кв.м.</p>
+                            <p class="services__text"> Спальня 20 кв.м.</p>
+                            <p class="services__text">Гостиная 20 кв.м.</p>
+                            <p class="services__text"> Балкон 3 кв.м</p>
+                            <p class="services__text">Душ и все принадлежности <br>
+                                на 2 двоих отдельные раздельные кровати </p>
+                            <button
+                                class="global-btn treatment__learnmore-btn treatment__services-btn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rooms__gallery">
+                <h2 class="global__title rooms__gallery-title">Галерея</h2>
+                <div class="popup-gallery">
+                    <a class="popup__gallery-img" href="./src/img/slider-img/slider-1.jpg" alt="Фото номеров"><img
+                            src="./src/img/slider-img/slider-1.jpg" alt="Фото номеров"></a>
+                    <a class="popup__gallery-img" href="./src/img/slider-img/slider-2.jpg" alt="Фото номеров"><img
+                            src="./src/img/slider-img/slider-2.jpg" alt="Фото номеров"></a>
+                    <a class="popup__gallery-img" href="./src/img/slider-img/slider-3.jpg" alt="Фото номеров"><img
+                            src="./src/img/slider-img/slider-3.jpg" alt="Фото номеров"></a>
+                    <a class="popup__gallery-img" href="./src/img/slider-img/slider-4.jpg" alt="Фото номеров"><img
+                            src="./src/img/slider-img/slider-4.jpg" alt="Фото номеров"></a>
+                    <a class="popup__gallery-img" href="./src/img/slider-img/slider-5.jpg" alt="Фото номеров"><img
+                            src="./src/img/slider-img/slider-5.jpg" alt="Фото номеров"></a>
+                    <a class="popup__gallery-img" href="./src/img/slider-img/slider-6.jpg" alt="Фото номеров"><img
+                            src="./src/img/slider-img/slider-6.jpg" alt="Фото номеров"></a>
+                </div>
+            </section>
+
+            <section id="contacts" class="treatment__services call__me__content">
+                <img class="treatment__services-img" src="./src/img/media-img/contact-img.jpg" alt="Фото лечения">
+                <div class="treatment__services__content">
+                    <h3 class="treatment__services__content-title">Свяжитесь с нами</h3>
+                    <div class="treatment__services__content__text__wrapper">
+                        <p class="global__content__text">Мы с радостью ответим на все ваши вопросы и поможем в выборе.
+                        </p>
+                        <div class="call__me__bg-yellow">
+                            <div class="contact__box">
+                                <p class="contact__tell-title">Телефон</p>
+                                <a class="contact__tell-call" href="tel:+380763196">+380 763 196</a>
+                            </div>
+                            <div class="contact__box">
+                                <p class="contact__tell-title">Email</p>
+                                <a class="contact__tell-call" href="mailto:mail@test">shi-pasu@gmail.com</a>
+                            </div>
+                            <div class="contact__box">
+                                <p class="contact__tell-title">Адрес</p>
+                                <p class="contact__tell-call">Васант Вихар, Нью-Дели - 110057, Индия.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="contact__link-box">
+                    <a class="header__logo footer__logo" href="#">“Шипа су”</a>
+                    <ul class="contact__link-nav">
+                        <li class="contact__link-menu"><a href="#about">О нас</a></li>
+                        <li class="contact__link-menu"><a href="#treatment">Лечение</a></li>
+                        <li class="contact__link-menu"><a href="#games">Развлечения</a></li>
+                        <li class="contact__link-menu"><a href="#treatment">Косметология</a></li>
+                        <li class="contact__link-menu"><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="contact__link-box">
+                    <h3 class="contact__link-title">Адрес</h3>
+                    <p class="contact__footer-info">Васант Вихар, Нью-Дели - 110057, Индия.</p>
+                </div>
+                <div class="contact__link-box">
+                    <h3 class="contact__link-title">Контакты</h3>
+                    <a class="contact__footer-tell" href="tel:77777777">+380 763 196</a>
+                    <a class="contact__footer-tell" href="tel:77777777">+380 626 752</a>
+                    <a class="contact__footer-tell" href="tel:77777777">+380 378 257</a>
+                    <a class="contact__footer-tell" href="mailto:mail@test">shi-pasu@gmail.com</a>
+                </div>
+                <div class="contact__link-box">
+                    <h3 class="contact__link-title">Подпишись на нас</h3>
+                    <a class="contact__footer-social contact__footer-social-facebook" target="_blank"
+                        href="https://www.facebook.com/">facebook</a>
+                    <a class="contact__footer-social contact__footer-social-instagram" target="_blank"
+                        href="https://www.instagram.com/">instagram</a>
+
+                </div>
+            </div>
+            <p class="footer__license">
+                © Shipasu. Все права защищены, 2022
+            </p>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal-block">
+            <form>
+                <span class="btn-close">X</span>
+                <h3 class="modal-title">Регистрация</h3>
+                <div class="form-filed">
+                    <input class="form__fied-input" type="text" placeholder="Ваше имя">
+                </div>
+                <div class="form-filed">
+                    <input class="form__fied-input" type="tel:" placeholder="Номер телефона">
+                </div>
+                <div class="form-filed">
+                    <input class="form__fied-input" type="mail" placeholder="Вам email">
+                </div>
+                <div class="form-filed">
+                    <p class="form__fied__input-title">Дата заезда</p>
+                    <input class="form__fied-input" type="date" id="start" name="trip-start" value="2022-01-01"
+                        min="2022-01-01" max="2022-12-31">
+                </div>
+                <div class="form-filed">
+                    <p class="form__fied__input-title">Ваши пожелания</p>
+                    <input class="form__fied-input" type="text" placeholder="Коментарий">
+                </div>
+                <button class="modal-send">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Cat -->
+    <div class="modal-cat">
+        <div class="modal__cat-block">
+            <span class="btn-closeCat">X</span>
+            <p class="modal__cat__block-text">
+                shut me up please
+            </p>
+        </div>
+    </div>
+
+    <script src="./src/vendor/jquery.min.js"></script>
+    <script src="./src/vendor/slick/slick.min.js"></script>
+    <script src="./src/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="./src/js/app.js"></script>
+</body>
+
+</html>
